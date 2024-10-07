@@ -178,7 +178,7 @@ const Header = () => {
                                             <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                 <MenuItem>
                                                     <NavLink
-                                                        href="#"
+                                                        to="/Location"
                                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                                     >
                                                         Location
@@ -186,7 +186,7 @@ const Header = () => {
                                                 </MenuItem>
                                                 <MenuItem>
                                                     <NavLink
-                                                        href="#"
+                                                        to="/ShopAtHome"
                                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                                     >
                                                         Shop At Home

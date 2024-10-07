@@ -14,6 +14,8 @@ import Reviews from './Components/Reviews.jsx'
 import ShopAtHome from './Components/ShopAtHome.jsx'
 import Financing from './Components/Financing.jsx'
 import Inspiration from './Components/Inspiration.jsx'
+import Location from './Components/Location.jsx'
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +31,7 @@ const router = createBrowserRouter(
       <Route path="ShopAtHome" element={<ShopAtHome />} />
       <Route path="Financing" element={<Financing />} />
       <Route path="Inspiration" element={<Inspiration />} />
+      <Route path="Location" element={<Location />} />
     </Route>
   )
 )
