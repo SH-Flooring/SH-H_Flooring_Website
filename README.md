@@ -1,8 +1,35 @@
-# React + Vite
+# Construction Company Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Construction Company Website project! This is a full-stack web application designed to showcase the services and projects of a construction company. The application features a user-friendly front end and a robust back end, enabling users to explore various construction services, and contact the company easily.
 
-Currently, two official plugins are available:
+## Features
+- **Responsive Design**: The website is fully responsive, providing an optimal viewing experience on desktops, tablets, and smartphones.
+- **Service Listings**: Users can view a list of construction services offered by the company.
+- **Project Portfolio**: Showcase of completed projects with images and descriptions.
+- **Contact Form**: Users can easily get in touch with the company through a contact form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Front End**:
+  - React
+  - Tailwind CSS
+  - React-Router
+  - React-Hook-Form
+  - React-Icons
+- **Back End**:
+  - Node.js
+  - Express.js
+  - MongoDB (or your chosen database)
+
+## Installation
+To get started with the project, follow these steps:
+npm create vite@latest
+npm i 
+npm run dev
+npm i react-router-dom
+npm i react-hook-form
+npm i react-icons
+npm i @headlessui/react
+npm i @heroicons/react
+npm install -D tailwindcss postcss autoprefixer
+npm tailwindcss init -p
+
