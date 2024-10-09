@@ -22,7 +22,6 @@ Welcome to the Construction Company Website project! This is a full-stack web ap
 
 ## Installation
 To get started with the project, follow these steps:
-npm create vite@latest
 npm i 
 npm run dev
 npm i react-router-dom
