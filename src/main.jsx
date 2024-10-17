@@ -15,6 +15,8 @@ import ShopAtHome from './Components/ShopAtHome.jsx'
 import Financing from './Components/Financing.jsx'
 import Inspiration from './Components/Inspiration.jsx'
 import Location from './Components/Location.jsx'
+import ThankYou from './Components/ThankYou.jsx'
+
 
 
 const router = createBrowserRouter(
@@ -32,6 +34,7 @@ const router = createBrowserRouter(
       <Route path="Financing" element={<Financing />} />
       <Route path="Inspiration" element={<Inspiration />} />
       <Route path="Location" element={<Location />} />
+      <Route path="ThankYou" element={<ThankYou />} />
     </Route>
   )
 )
