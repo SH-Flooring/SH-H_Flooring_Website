@@ -24,109 +24,133 @@ const Carpet = () => {
                 <div class="grid grid-cols-2 gap-5 gap-y-5 p-10 m-10 md:grid-cols-4">
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://c.pxhere.com/photos/d2/2a/carpet_texture_rough_material_fabric_floor_textile_rug-1253220.jpg!d"
-                            />
+                            <Link to={"/product/ArtistSlate"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://c.pxhere.com/photos/d2/2a/carpet_texture_rough_material_fabric_floor_textile_rug-1253220.jpg!d"
+                                />
+                            </Link>
                             <figcaption>Artist Slate</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://4.bp.blogspot.com/-aYipqafSnmY/UYIf2Iyfm-I/AAAAAAAACNI/BUE38iQcHkA/s1600/carpet23.jpg"
-                            />
+                            <Link to={"/product/SquarePatterns"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://4.bp.blogspot.com/-aYipqafSnmY/UYIf2Iyfm-I/AAAAAAAACNI/BUE38iQcHkA/s1600/carpet23.jpg"
+                                />
+                            </Link>
                             <figcaption>Square Patterns </figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://get.pxhere.com/photo/texture-floor-pattern-line-red-color-blue-material-textile-art-carpet-flooring-multi-color-bed-sheet-925213.jpg"
-                            />
+                            <Link to={"/product/ColourfulRays"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://get.pxhere.com/photo/texture-floor-pattern-line-red-color-blue-material-textile-art-carpet-flooring-multi-color-bed-sheet-925213.jpg"
+                                />
+                            </Link>
                             <figcaption>Colourful rays</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://get.pxhere.com/photo/orange-yellow-carpet-brown-line-flooring-pattern-plant-floor-beige-flower-1615569.jpg"
-                            />
+                            <Link to={"/product/ColouredBright"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://get.pxhere.com/photo/orange-yellow-carpet-brown-line-flooring-pattern-plant-floor-beige-flower-1615569.jpg"
+                                />
+                            </Link>
                             <figcaption>Coloured Bright</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://img00.deviantart.net/aac4/i/2010/289/8/4/seamless_carpet_dark_by_hhh316-d30v2ul.jpg"
-                            />
+                            <Link to={"/product/BlackBox"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://img00.deviantart.net/aac4/i/2010/289/8/4/seamless_carpet_dark_by_hhh316-d30v2ul.jpg"
+                                />
+                            </Link>
                             <figcaption>Black box</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://pre00.deviantart.net/183a/th/pre/i/2010/290/3/d/seamless_carpet_texture_by_hhh316-d30xq15.jpg"
-                            />
+                            <Link to={"/product/KnittedLines"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://pre00.deviantart.net/183a/th/pre/i/2010/290/3/d/seamless_carpet_texture_by_hhh316-d30xq15.jpg"
+                                />
+                            </Link>
                             <figcaption>Knitted Lines</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://live.staticflickr.com/2728/4057575737_9fc2cc0fdf_b.jpg"
-                            />
+                            <Link to={"/product/TradtionalFeelz"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://live.staticflickr.com/2728/4057575737_9fc2cc0fdf_b.jpg"
+                                />
+                            </Link>
                             <figcaption>Traditional Feelz</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://3.bp.blogspot.com/-MdJZ8hlDVhY/UXl97jMoxFI/AAAAAAAAHRg/xhZLL80ed1E/s1600/parquet-kambala-.png"
-                            />
+                            <Link to={"/product/WoodenTexture"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://3.bp.blogspot.com/-MdJZ8hlDVhY/UXl97jMoxFI/AAAAAAAAHRg/xhZLL80ed1E/s1600/parquet-kambala-.png"
+                                />
+                            </Link>
                             <figcaption>Wooden Texture</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="object-cover aspect-square"
-                                src="https://get.pxhere.com/photo/plant-texture-flower-purple-petal-pattern-red-produce-pink-fabric-crochet-textile-shrub-carpet-magenta-fibers-tissue-woven-flooring-flowering-plant-land-plant-718218.jpg"
-                            />
+                            <Link to={"/product/RosyFlowers"}>
+                                <img
+                                    className="object-cover aspect-square"
+                                    src="https://get.pxhere.com/photo/plant-texture-flower-purple-petal-pattern-red-produce-pink-fabric-crochet-textile-shrub-carpet-magenta-fibers-tissue-woven-flooring-flowering-plant-land-plant-718218.jpg"
+                                />
+                            </Link>
                             <figcaption>Rosy Flowers</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="aspect-square object-cover"
-                                src="https://cdn.pixabay.com/photo/2014/04/05/11/22/red-carpet-315459_960_720.jpg"
-                            />
+                            <Link to={"/product/PatternMatches"}>
+                                <img
+                                    className="aspect-square object-cover"
+                                    src="https://cdn.pixabay.com/photo/2014/04/05/11/22/red-carpet-315459_960_720.jpg"
+                                />
+                            </Link>
                             <figcaption>Pattern Matches</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="aspect-square object-cover"
-                                src="https://p0.pikist.com/photos/645/901/carpet-orient-pattern-oriental-carpet-retired-carpet-dealers-turkey-persian-rug-carpet-weaving-center.jpg"
-                            />
+                            <Link to={"/product/RuggedDesign"}>
+                                <img
+                                    className="aspect-square object-cover"
+                                    src="https://p0.pikist.com/photos/645/901/carpet-orient-pattern-oriental-carpet-retired-carpet-dealers-turkey-persian-rug-carpet-weaving-center.jpg"
+                                />
+                            </Link>
                             <figcaption>Rugged Design</figcaption>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img
-                                className="aspect-square object-cover"
-                                src="https://p0.pikist.com/photos/453/206/rhodes-rugs-carpets-rug-carpet-texture-textile-pattern-interior.jpg"
-                            />
+                            <Link to={"/product/UniqueBorders"}>
+                                <img
+                                    className="aspect-square object-cover"
+                                    src="https://p0.pikist.com/photos/453/206/rhodes-rugs-carpets-rug-carpet-texture-textile-pattern-interior.jpg"
+                                />
+                            </Link>
                             <figcaption>Unique Borders</figcaption>
                         </figure>
                     </div>

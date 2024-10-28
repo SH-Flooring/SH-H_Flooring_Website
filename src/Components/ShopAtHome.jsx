@@ -51,7 +51,7 @@ const ShopAtHome = () => {
                         </h1>
                     </div>
                 </div>
-                <div className='bg-gray-400'>
+                <div className='bg-gray-200'>
                     <Form />
                 </div>
 

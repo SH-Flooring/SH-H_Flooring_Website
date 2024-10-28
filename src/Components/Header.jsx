@@ -16,9 +16,9 @@ import { FaSearch } from "react-icons/fa";
 
 const navigation = [
     // { name: 'Dashboard', href: '#' },
-    { name: "Financing", href: "/Financing" },
+   // { name: "Financing", href: "/Financing" },
     { name: "Reviews", href: "/Reviews" },
-    { name: "Inspiration", href: "/Inspiration" },
+    //{ name: "Inspiration", href: "/Inspiration" },
     { name: "Contact", href: "/Contact" },
 ];
 
@@ -29,7 +29,7 @@ function classNames(...classes) {
 const Header = () => {
     return (
         <>
-            <div className="container flex flex-col md:flex-row justify-between items-center m-auto p-4">
+            <div className="container flex flex-col justify-between md:flex-row  items-center m-auto  ">
                 {/* Address Section */}
                 <div className="address text-sm text-center md:text-left mb-4 md:mb-0">
                     111 Portage Avenue, Winnipeg MB R2G 3N3 <br /> (For Appointment only)
@@ -42,9 +42,10 @@ const Header = () => {
                 <div className="flex justify-center items-center logo mb-4 md:mb-0">
                     <Link href="#">
                         <img
-                            className="h-20 w-20 md:h-28 md:w-28"
+                            className="h-72 w-72 object-contain pt-12"
                             src="logo.svg"
                             alt="logo"
+                            style={{ maxHeight: '100%', maxWidth: '100%' }}
                         />
                     </Link>
                 </div>
@@ -118,6 +119,38 @@ const Header = () => {
                                                         Carpet Tile
                                                     </NavLink>
                                                 </MenuItem>
+                                                <MenuItem>
+                                                    <NavLink
+                                                        to="/"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        Hardwood
+                                                    </NavLink>
+                                                </MenuItem>
+                                                <MenuItem>
+                                                    <NavLink
+                                                        to="/"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        Laminate
+                                                    </NavLink>
+                                                </MenuItem>
+                                                <MenuItem>
+                                                    <NavLink
+                                                        to="/"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        Vinyl
+                                                    </NavLink>
+                                                </MenuItem>
+                                                <MenuItem>
+                                                    <NavLink
+                                                        to="/"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        Paint
+                                                    </NavLink>
+                                                </MenuItem>
                                             </MenuItems>
                                         </Menu>
                                         {/* Dropdown mwnu for Services */}
@@ -134,18 +167,42 @@ const Header = () => {
                                             <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                 <MenuItem>
                                                     <NavLink
-                                                        to="/KitchenRemodeling"
+                                                        to="/CarpetInstallation"
                                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                                     >
-                                                        Kitchen Remodeling
+                                                        Carpet Installation
                                                     </NavLink>
                                                 </MenuItem>
                                                 <MenuItem>
                                                     <NavLink
-                                                        to="/BathroomRemodeling"
+                                                        to="/HardwoodInstallation"
                                                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                                     >
-                                                        Bathroom Remodeling
+                                                       Hardwood Installation
+                                                    </NavLink>
+                                                </MenuItem>
+                                                <MenuItem>
+                                                    <NavLink
+                                                        to="/LaminateInstallation"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        Laminate Installation
+                                                    </NavLink>
+                                                </MenuItem>
+                                                <MenuItem>
+                                                    <NavLink
+                                                        to="/VinylInstallation"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        Vinyl Installation
+                                                    </NavLink>
+                                                </MenuItem>
+                                                <MenuItem>
+                                                    <NavLink
+                                                        to="/Painting"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        Painting
                                                     </NavLink>
                                                 </MenuItem>
                                             </MenuItems>
