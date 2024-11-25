@@ -13,10 +13,10 @@ const app=express();
 dotenv.config({ path: "./.env" });
 console.log("Mongo URI:", process.env.MONGO_URI);
 
-
+app.options("*", cors());
 app.use(
   cors({
-    origin: ["https://sh-h-flooringfrontened.vercel.app"],
+    origin: ["https://sh-h-flooring-frontend.vercel.app/",],
     methods: ["POST", "GET"],
     credentials: true,
   })
@@ -34,6 +34,10 @@ app.get("/",(req,res)=>{
     res.json("server is running.")
 })
 
+app.get("/contact",(req,res)=>{
+    res.json("Thank you for submitting")
+})
+
 app.post("/contact", async (req, res) => {
   console.log("Received contact data:", req.body);
   try {
@@ -49,10 +53,6 @@ app.post("/contact", async (req, res) => {
       error: err,
     });
   }
-});
-
-app.get("/info-form", (req, res) => {
-  res.send("thank you for submiting");
 });
 
 app.post("/info-form", async (req, res) => {
@@ -84,8 +84,9 @@ app.post("/estimate-form", async (req, res) => {
       reqEstimate: toDB,
     });
   } catch (err) {
+   console.error("Error saving estimate:", err);
     res.status(400).json({
-      error: err,
+      error: err.message,
     });
   }
 });
