@@ -14,7 +14,7 @@ export default function InfoForm() {
     const onSubmit = async (data) => {
         try {
             const response = await fetch(
-                "https://sh-h-flooring-backened.vercel.app/info-form",
+                "https://sh-h-flooring-backend.vercel.app/info-form",
                 {
                     method: "POST",
                     body: JSON.stringify(data), // Directly pass the data without wrapping in { data }

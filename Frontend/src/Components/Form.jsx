@@ -14,7 +14,7 @@ export default function Form() {
     const onSubmit = async (data) => {
         try {
             const response = await fetch(
-                "https://sh-h-flooring-backened.vercel.app/estimate-form",
+                "https://sh-h-flooring-backend.vercel.app/estimate-form",
                 {
                     method: "POST",
                     body: JSON.stringify(data), // Directly pass the data without wrapping in { data }
@@ -26,10 +26,9 @@ export default function Form() {
             const res = await response.json();
             if (response.ok) {
                 console.log(res);
-
                 navigate("/ThankYou"); // Redirect after successful submission
             } else {
-                console.error("Submission failed");
+                console.error("Submission failed",res);
             }
         } catch (error) {
             console.error("Error:", error);

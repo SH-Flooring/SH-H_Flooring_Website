@@ -14,15 +14,15 @@ const Contact = () => {
     const onSubmit = async (data) => {
         try {
             const response = await fetch(
-                "https://sh-h-flooring-backened.vercel.app/contact",
+                "https://sh-h-flooring-backend.vercel.app/contact",
                 {
                     method: "POST",
                     body: JSON.stringify(data), // Directly pass the data without wrapping in { data }
                     headers: {
                         "Content-Type": "application/json",
                     },
-                }
-            );
+                    credentials: "include", // Ensure cookies or tokens are included
+                });
             const res = await response.json();
             if (response.ok) {
                 console.log(res);
