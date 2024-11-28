@@ -27,7 +27,10 @@ app.use(bodyParser.json());
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("DB Connected"))
-  .catch((err) => console.log(`DB connection error: ${err.message}`));
+ .catch((err) => {
+    console.log(`DB connection error: ${err.message}`);
+    process.exit(1);  // Exit the process if the connection fails
+  });
 
 app.get("/",(req,res)=>{
     res.json("server is running.")
@@ -44,10 +47,12 @@ app.post("/contact", async (req, res) => {
     console.log("Creating User", req.body);
 
     const toDB = await user.save(); // Using await instead of callback
+    console.log("User saved to DB:", toDB); 
     res.status(200).json({
       user: toDB,
     });
   } catch (err) {
+    console.error("Error saving user:", err);
     res.status(400).json({
       error: err,
     });
