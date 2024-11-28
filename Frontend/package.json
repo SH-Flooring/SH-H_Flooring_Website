@@ -1,10 +1,14 @@
 {
   "name": "frontend",
   "version": "1.0.0",
+  "type": "module",
   "description": "Welcome to the Construction Company Website project! This is a full-stack web application designed to showcase the services and projects of a construction company. The application features a user-friendly front end and a robust back end, enabling users to explore various construction services, and contact the company easily.",
   "main": "eslint.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+ "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",
