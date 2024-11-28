@@ -13,10 +13,9 @@ const app=express();
 dotenv.config({ path: "./.env" });
 console.log("Mongo URI:", process.env.MONGO_URI);
 
-app.options("*", cors());
 app.use(
   cors({
-    origin: ["https://sh-h-flooring-frontend.vercel.app/",],
+    origin: ["https://sh-h-flooring-frontend.vercel.app",],
     methods: ["POST", "GET"],
     credentials: true,
   })
