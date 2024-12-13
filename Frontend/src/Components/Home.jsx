@@ -11,7 +11,7 @@ const Home = () => {
                     src="https://2.bp.blogspot.com/-J68x1jWW1B4/UZGdiQSe7wI/AAAAAAAAHrw/mK93KPYWTtg/s1600/IL+MIO+ALBERO+COVER.jpg"
                 />
                 <h1 className="absolute text-l md:text-2xl lg:text-3xl text-slate-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-thin">
-                    Here At Floor Masters We Are Offering Best Services At Best Prices!
+                    Here At Sh&H Carpet Solutions We Are Offering Best Services At Best Prices!
                     Contact Us Now!
                 </h1>
                 <h2 className="absolute text-l md:text-2xl lg:text-3xl italic font-thin text-amber-400 bottom-4 left-1/2 -translate-x-1/2">
@@ -20,7 +20,7 @@ const Home = () => {
             </div>
             <div className="text-center p-4 my-3">
                 <h1 className=" text-5xl my-3">
-                    Looking For New Floors In The Winnipeg, MB Area?{" "}
+                    Looking For New Floors In The Findlay Creek, Ottawa Area?{" "}
                 </h1>
                 <h2 className="font-thin text-xl">
                     SHOP AT OUR EXTENSIVE FLOORING CATALOGUE

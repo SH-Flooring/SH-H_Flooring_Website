@@ -28,7 +28,7 @@ export default function Form() {
                 console.log(res);
                 navigate("/ThankYou"); // Redirect after successful submission
             } else {
-                console.error("Submission failed",res);
+                console.error("Submission failed", res);
             }
         } catch (error) {
             console.error("Error:", error);
@@ -267,12 +267,8 @@ export default function Form() {
                                     {[
                                         "Carpet",
                                         "Carpet Tile",
-                                        "Cork",
-                                        "Glass Tile",
                                         "Hardwood",
-                                        "Kitchen And Bath",
                                         "Laminate",
-                                        "Metal Tile",
                                     ].map((product, index) => (
                                         <div key={index} className="flex items-center">
                                             <input

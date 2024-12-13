@@ -34,6 +34,8 @@ import Paint from "./Components/Paint.jsx";
 import ResidentialPainting from "./Components/ResidentialPainting.jsx";
 import VinylInstallation from "./Components/VinylInstallation.jsx";
 import Services from "./Components/Services.jsx";
+import Login from "./Components/Login.jsx"
+import AdminHome from "./Components/AdminHome.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +49,7 @@ const router = createBrowserRouter(
       <Route path="HardwoodInstallation" element={<HardwoodInstallation />} />
       <Route path="CarpetInstallation" element={<CarpetInstallation />} />
       <Route path="Reviews" element={<Reviews />} />
+      <Route path="Login" element={<Login />} />
       <Route path="ShopAtHome" element={<ShopAtHome />} />
       <Route path="Location" element={<Location />} />
       <Route path="ThankYou" element={<ThankYou />} />
@@ -63,6 +66,7 @@ const router = createBrowserRouter(
       <Route path="/carpetTile/:id" element={<CarpetTileDetail />} />
       <Route path="/laminate/:id" element={<LaminateDetail />} />
       <Route path="Services" element={<Services />} />
+      <Route path="AdminHome" element={<AdminHome />} />
     </Route>
   )
 );
