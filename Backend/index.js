@@ -95,6 +95,33 @@ app.post("/estimate-form", async (req, res) => {
   }
 });
 
+app.get('/admin/users', async (req, res) => {
+  try {
+    const users = await Users.find();
+    res.json(users);
+  } catch (error) {
+    res.status(500).send('Error fetching users');
+  }
+});
+
+app.get('/admin/estimates', async (req, res) => {
+  try {
+    const estimates = await EstimateRequest.find();
+    res.json(estimates);
+  } catch (error) {
+    res.status(500).send('Error fetching estimates');
+  }
+});
+
+app.get('/admin/info', async (req, res) => {
+  try {
+    const info = await Info.find();
+    res.json(info);
+  } catch (error) {
+    res.status(500).send('Error fetching info');
+  }
+});
+
 app.listen(3000,()=>{
     console.log("Server is running on PORT 3000")
 })

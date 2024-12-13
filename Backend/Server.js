@@ -47,19 +47,7 @@ app.post("/", (req, res) => {
     });
   });
 });
-// app.post("/", (req, res) => {
-//   console.log(`Received Information:
-//     First Name: ${req.body.FirstName},
-//     Last Name:${req.body.LastName},
-//     Email Address: ${req.body.email},
-//     Phone: ${req.body.PshoneNumber}
-//     Postal Code:${req.body.PostalCode}
-//     Comments: ${req.body.Comments}
-//   `);
-//   res.json(req.body);
-// });
 
-// Start server on specified PORT
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
