@@ -2,19 +2,20 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Form from "./Form";
 import { BsChatText } from "react-icons/bs";
+import Header from "./Header"
 const Home = () => {
     return (
         <div>
-            <div className="relative">
+            <div className="relative bg-black">
                 <img
-                    className="w-screen h-96 object-cover"
-                    src="https://2.bp.blogspot.com/-J68x1jWW1B4/UZGdiQSe7wI/AAAAAAAAHrw/mK93KPYWTtg/s1600/IL+MIO+ALBERO+COVER.jpg"
+                    className="w-screen h-96 object-cover opacity-75"
+                    src="https://1.bp.blogspot.com/-InIYEVwRf58/Wqw6NlDfLaI/AAAAAAAAiLk/PXVS_trGPcg7aRpqYSaT6wfPlUqUjDTogCLcBGAs/s1600/wood-floor-trim-ideas-crazy-decorating-chic-flooring-using-bruce-hardwood-floors-for-home-of-wood-floor-trim-ideas.jpg"
                 />
-                <h1 className="absolute text-l md:text-2xl lg:text-3xl text-slate-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-thin">
+                <h1 className="absolute text-l md:text-2xl lg:text-3xl text-slate-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-center" >
                     Here At Sh&H Carpet Solutions We Are Offering Best Services At Best Prices!
                     Contact Us Now!
                 </h1>
-                <h2 className="absolute text-l md:text-2xl lg:text-3xl italic font-thin text-amber-400 bottom-4 left-1/2 -translate-x-1/2">
+                <h2 className="absolute text-l md:text-2xl lg:text-3xl italic font-semibold text-slate-50 bottom-4 left-1/2 -translate-x-1/2">
                     Where Every steps begins with excellence!
                 </h2>
             </div>
@@ -123,33 +124,7 @@ const Home = () => {
                     View All Products{" "}
                 </Link>
             </div>
-            <div className="p-4 my-12 shopAtCards grid grid-cols-1 md:grid-cols-2 gap-3 mx-4 md:mx-14">
-                {/* Shop In-Store Card */}
-                <div className="relative">
-                    <figure className="bg-black">
-                        <img
-                            className="object-cover aspect-square md:h-80 h-64 w-full opacity-60"
-                            src="https://cdn.websites.hibu.com/816e7b37971440cc95b8dd53ed7c9da9/dms3rep/multi/IMG_0060.JPG"
-                            alt="shop_in_store"
-                        />
-                        <figcaption className="absolute inset-0 p-4 md:p-6 flex flex-col justify-between h-full">
-                            <h1 className="text-xl md:text-2xl mt-1 font-semibold text-white text-center">
-                                SHOP IN-STORE
-                            </h1>
-                            <h2 className="text-white mt-2 md:mt-4 text-left mx-1 text-sm md:text-lg">
-                                Come by our showroom and see what we have to offer. Our
-                                knowledgeable staff is ready to assist you in selecting the
-                                right flooring to ensure your satisfaction for years to come.
-                            </h2>
-                            <div className="text-center mt-8 md:mt-12">
-                                <h2 className="w-48 md:w-56 text-lg md:text-xl text-white bg-green-600 p-2 hover:bg-green-900 inline-block">
-                                    <Link to="/contact">Contact Us</Link>
-                                </h2>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-
+            <div className="p-4 my-12 shopAtCards grid grid-cols-1 md:grid-cols-1 gap-3 mx-4 md:mx-14">
                 {/* Shop At Home Card */}
                 <div className="relative">
                     <figure className="bg-black">
@@ -162,7 +137,7 @@ const Home = () => {
                             <h1 className="text-xl md:text-2xl font-semibold text-white text-center">
                                 SHOP AT HOME
                             </h1>
-                            <h2 className="text-white mt-2 md:mt-4 text-left mx-1 text-sm md:text-lg">
+                            <h2 className="text-white mt-2 md:mt-4 text-center mx-1 text-sm md:text-lg">
                                 Don’t have time to stop by our showroom? We can bring samples
                                 right to your front door. Just schedule an appointment to get
                                 started.

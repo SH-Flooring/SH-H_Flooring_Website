@@ -49,7 +49,6 @@ const Header = () => {
 
             </div>
 
-
             <div>
                 <Disclosure as="nav" className="bg-black">
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-0">
