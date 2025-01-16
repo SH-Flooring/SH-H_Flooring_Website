@@ -84,7 +84,7 @@ const Header = () => {
                                 </DisclosureButton>
                             </div>
 
-                            <div className="flex flex-1 items-center justify-center sm:items-stretch ">
+                            <div className="flex flex-1  items-center justify-center sm:items-stretch ">
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4 ">
                                         {/* Dropdown menu for Dashboard */}
